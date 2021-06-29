@@ -1,0 +1,51 @@
+baseURL: 
+languageCode: en-us
+DefaultContentLanguage: en
+title: funRiceGenes
+theme: hugo-theme-docport
+pygmentsCodeFences: yes
+pygmentsStyle: monokai
+defaultContentLanguageInSubdir: no
+enableMissingTranslationPlaceholders: no
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+  - category
+  - RSS
+params:
+  color_main: '#737373'
+  disableNavChevron: no
+  disableSearch: no
+  editWithNetlifyCMSURL: admin/#/collections/pages/entries/
+  enableGitInfo: yes
+  menushortcutsnewtab: no
+  ordersectionsby: weight
+mediaTypes:
+  application/netlifyconfig:
+    suffixes: yml
+outputFormats:
+  netlifyyaml:
+    isHTML: no
+    isPlainText: yes
+    mediaType: application/netlifyconfig
+    notAlternative: yes
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+  highlight:
+    codeFences: yes
+    guessSyntax: yes
+    hl_Lines: ''
+    lineNoStart: 1
+    lineNos: no
+    lineNumbersInTable: yes
+    noClasses: yes
+    style: monokai
+    tabWidth: 2
+
